@@ -1,0 +1,15 @@
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/bin/Debug/net8.0/NumberPrinter
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/bin/Debug/net8.0/NumberPrinter.deps.json
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/bin/Debug/net8.0/NumberPrinter.runtimeconfig.json
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/bin/Debug/net8.0/NumberPrinter.dll
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/bin/Debug/net8.0/NumberPrinter.pdb
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/NumberPrinter.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/NumberPrinter.AssemblyInfoInputs.cache
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/NumberPrinter.AssemblyInfo.cs
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/NumberPrinter.csproj.CoreCompileInputs.cache
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/NumberPrinter.sourcelink.json
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/NumberPrinter.dll
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/refint/NumberPrinter.dll
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/NumberPrinter.pdb
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/NumberPrinter.genruntimeconfig.cache
+/home/runner/work/my-first-agent/my-first-agent/NumberPrinter/obj/Debug/net8.0/ref/NumberPrinter.dll

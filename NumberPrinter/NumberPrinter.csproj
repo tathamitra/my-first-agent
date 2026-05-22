@@ -1,0 +1,17 @@
+<!-- Ahoy! This be the project file fer our mighty number-printin' vessel! -->
+<!-- Set sail with .NET and let the winds of compilation guide ye! -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Arrr! Here we define the properties of our ship's hull -->
+  <PropertyGroup>
+    <!-- This be a console application, fit fer commandin' the terminal seas! -->
+    <OutputType>Exe</OutputType>
+    <!-- We be sailin' on the .NET 8.0 waters, matey! -->
+    <TargetFramework>net8.0</TargetFramework>
+    <!-- Keep yer code clean or walk the plank! Nullable warnings enabled! -->
+    <Nullable>enable</Nullable>
+    <!-- Implicit usings be like a trusty first mate - always there when ye need 'em! -->
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>
