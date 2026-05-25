@@ -2,7 +2,7 @@ name: Jira Agent Flow
 
 on:
   repository_dispatch:
-    types: [feature_request]
+    types: [jira-ticket-created]
 
 permissions:
   contents: write
