@@ -1,0 +1,22 @@
+name: Jira Agent Flow
+
+on:
+  repository_dispatch:
+    types: [feature_request]
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Print Jira Payload
+        run: |
+          echo "Issue:"
+          echo "${{ github.event.client_payload.summary }}"
+
+      - name: Read Agent Instructions
+        run: |
+          cat .agents/developer.md
