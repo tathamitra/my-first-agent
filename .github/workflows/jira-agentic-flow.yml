@@ -23,11 +23,11 @@ jobs:
 
       - name: Read Agent Instructions
         run: |
-          cat .agents/developer.md
+          cat .github/agents/developer.agent.md
 
       - name: Create Branch
         run: |
-          git checkout -b feature-${{ github.run_number }}
+          git checkout -b feature/${{ github.event.client_payload.issue_key }}
 
       - name: Modify README
         run: |
