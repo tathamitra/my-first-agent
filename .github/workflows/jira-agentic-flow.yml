@@ -6,10 +6,11 @@ on:
 
 permissions:
   contents: write
+  issues: write
   pull-requests: write
 
 jobs:
-  run-agent:
+  create-copilot-task:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,40 +19,27 @@ jobs:
 
       - name: Print Jira Payload
         run: |
-          echo "Issue:"
+          echo "Issue Key:"
+          echo "${{ github.event.client_payload.issue_key }}"
+
+          echo "Summary:"
           echo "${{ github.event.client_payload.summary }}"
 
       - name: Read Agent Instructions
         run: |
           cat .github/agents/developer.agent.md
 
-      - name: Create Branch
+      - name: Create GitHub Issue
         run: |
-          git checkout -b feature/${{ github.event.client_payload.issue_key }}
+          gh issue create \
+            --title "${{ github.event.client_payload.summary }}" \
+            --body "
+          Jira Issue: ${{ github.event.client_payload.issue_key }}
 
-      - name: Modify README
-        run: |
-          echo "" >> README.md
-          echo "## Jira Automation Test" >> README.md
-          echo "${{ github.event.client_payload.summary }}" >> README.md
+          Task:
+          ${{ github.event.client_payload.summary }}
 
-      - name: Commit Changes
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-
-          git add .
-
-          git commit -m "Automated update from Jira"
-
-      - name: Push Branch
-        run: |
-          git push origin HEAD
-
-      - name: Create Pull Request
-        run: |
-          gh pr create \
-            --title "Automation: ${{ github.event.client_payload.summary }}" \
-            --body "This PR was automatically created from Jira dispatch."
+          Please implement this following the developer agent instructions.
+          "
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
