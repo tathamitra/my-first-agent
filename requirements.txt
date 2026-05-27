@@ -1,0 +1,2 @@
+# Ahoy! These be the supplies we need fer our voyage!
+flask>=3.0.0
