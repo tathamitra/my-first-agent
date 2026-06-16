@@ -1,0 +1,9 @@
+# Arrr! Keep these bilge files out of our treasure chest (repo)!
+# Build results
+bin/
+obj/
+
+# IDE folders be walkin' the plank!
+.vs/
+*.user
+*.suo
